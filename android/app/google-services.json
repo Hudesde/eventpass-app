@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "478703211925",
+    "project_id": "eventpass-app-e99a0",
+    "storage_bucket": "eventpass-app-e99a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478703211925:android:928030d9c01e0ad8c1929c",
+        "android_client_info": {
+          "package_name": "com.charlesco.eventpass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlTKY35G2MAc9nEgrqKBkRHVncz7QPQXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478703211925:android:8af057bc9f921a64c1929c",
+        "android_client_info": {
+          "package_name": "com.example.tickets_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlTKY35G2MAc9nEgrqKBkRHVncz7QPQXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
