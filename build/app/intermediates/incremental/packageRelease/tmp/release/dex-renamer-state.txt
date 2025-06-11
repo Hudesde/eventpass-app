@@ -1,0 +1,4 @@
+#Mon Jun 09 18:05:26 CST 2025
+base.0=/home/huesitoes/Documentos/GitHub/eventpass-app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

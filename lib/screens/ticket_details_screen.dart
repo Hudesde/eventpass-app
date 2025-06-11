@@ -28,7 +28,7 @@ class _TicketDetailsScreenState extends State<TicketDetailsScreen> {
     super.initState();
     _pageController = PageController();
     if (widget.ticket.videoUrl != null) {
-      _videoController = VideoPlayerController.network(widget.ticket.videoUrl!);
+      _videoController = VideoPlayerController.asset(widget.ticket.videoUrl!);
       _videoController!.initialize().then((_) {
         setState(() {
           _videoInitialized = true;

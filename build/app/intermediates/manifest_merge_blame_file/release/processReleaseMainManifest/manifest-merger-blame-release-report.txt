@@ -1,0 +1,476 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.tickets_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         Required to query activities that can process text, see:
+12         https://developer.android.com/training/package-visibility and
+13         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+14
+15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+16    -->
+17    <queries>
+17-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:39:5-44:15
+18        <intent>
+18-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:40:9-43:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:41:13-72
+19-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:41:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:42:13-50
+21-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:42:19-48
+22        </intent>
+23    </queries>
+24    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+25    <!-- <uses-sdk android:minSdkVersion="21" /> -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:10:5-79
+26-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:10:22-76
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:11:5-67
+27-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:11:22-64
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:24:5-68
+28-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:24:22-65
+29    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+29-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:25:5-79
+29-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:25:22-76
+30    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+30-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:26:5-88
+30-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:26:22-85
+31    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+31-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:27:5-82
+31-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:27:22-79
+32    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+32-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:26:5-110
+32-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:26:22-107
+33    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+33-->[com.google.android.recaptcha:recaptcha:18.6.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1810ae132ee0f4cf4aa8a98b69a713b5/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+33-->[com.google.android.recaptcha:recaptcha:18.6.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1810ae132ee0f4cf4aa8a98b69a713b5/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+34
+35    <permission
+35-->[androidx.core:core:1.13.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/472bf64cdcd954049b2e77bac6a49d7c/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+36        android:name="com.example.tickets_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.13.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/472bf64cdcd954049b2e77bac6a49d7c/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.13.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/472bf64cdcd954049b2e77bac6a49d7c/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.example.tickets_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+39-->[androidx.core:core:1.13.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/472bf64cdcd954049b2e77bac6a49d7c/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.13.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/472bf64cdcd954049b2e77bac6a49d7c/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+40
+41    <application
+42        android:name="android.app.Application"
+42-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:4:9-42
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.13.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/472bf64cdcd954049b2e77bac6a49d7c/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+44        android:extractNativeLibs="false"
+45        android:icon="@mipmap/ic_launcher"
+45-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:5:9-43
+46        android:label="tickets_app" >
+46-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:3:9-36
+47        <activity
+47-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:6:9-27:20
+48            android:name="com.example.tickets_app.MainActivity"
+48-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:7:13-41
+49            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:12:13-163
+50            android:exported="true"
+50-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:8:13-36
+51            android:hardwareAccelerated="true"
+51-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:13:13-47
+52            android:launchMode="singleTop"
+52-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:9:13-43
+53            android:taskAffinity=""
+53-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:10:13-36
+54            android:theme="@style/LaunchTheme"
+54-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:11:13-47
+55            android:windowSoftInputMode="adjustResize" >
+55-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:14:13-55
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:19:13-22:17
+64                android:name="io.flutter.embedding.android.NormalTheme"
+64-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:20:15-70
+65                android:resource="@style/NormalTheme" />
+65-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:21:15-52
+66
+67            <intent-filter>
+67-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:23:13-26:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:24:17-68
+68-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:24:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:25:17-76
+70-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:25:27-74
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:30:9-32:33
+78            android:name="flutterEmbedding"
+78-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:31:13-44
+79            android:value="2" />
+79-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:32:13-30
+80
+81        <service
+81-->[:cloud_firestore] /home/huesitoes/Documentos/GitHub/eventpass-app/build/cloud_firestore/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:9-12:19
+82            android:name="com.google.firebase.components.ComponentDiscoveryService"
+82-->[:cloud_firestore] /home/huesitoes/Documentos/GitHub/eventpass-app/build/cloud_firestore/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:18-89
+83            android:directBootAware="true"
+83-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+84            android:exported="false" >
+84-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:16:13-37
+85            <meta-data
+85-->[:cloud_firestore] /home/huesitoes/Documentos/GitHub/eventpass-app/build/cloud_firestore/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:13-11:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+86-->[:cloud_firestore] /home/huesitoes/Documentos/GitHub/eventpass-app/build/cloud_firestore/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:17-134
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:cloud_firestore] /home/huesitoes/Documentos/GitHub/eventpass-app/build/cloud_firestore/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:17-82
+88            <meta-data
+88-->[:firebase_auth] /home/huesitoes/Documentos/GitHub/eventpass-app/build/firebase_auth/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:13-11:85
+89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+89-->[:firebase_auth] /home/huesitoes/Documentos/GitHub/eventpass-app/build/firebase_auth/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:17-124
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[:firebase_auth] /home/huesitoes/Documentos/GitHub/eventpass-app/build/firebase_auth/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:17-82
+91            <meta-data
+91-->[:firebase_core] /home/huesitoes/Documentos/GitHub/eventpass-app/build/firebase_core/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:13-11:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+92-->[:firebase_core] /home/huesitoes/Documentos/GitHub/eventpass-app/build/firebase_core/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:17-124
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_core] /home/huesitoes/Documentos/GitHub/eventpass-app/build/firebase_core/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:17:13-19:85
+95                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+95-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:18:17-122
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:19:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:20:13-22:85
+98                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+98-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:21:17-111
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-firestore:25.1.4] /home/huesitoes/.gradle/caches/8.10.2/transforms/8170192f90c68f51db2cb1589f1cce41/transformed/jetified-firebase-firestore-25.1.4/AndroidManifest.xml:22:17-82
+100            <meta-data
+100-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:33:13-35:85
+101                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+101-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:34:17-139
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.android.gms:play-services-measurement-api:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/2cd285b9823b1c008eaf043d01e9a1a0/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:35:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:69:13-71:85
+104                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+104-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:70:17-109
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:71:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-installations:18.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/cccd52bfbb594713462c7c85f4b91453/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+107                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+107-->[com.google.firebase:firebase-installations:18.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/cccd52bfbb594713462c7c85f4b91453/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-installations:18.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/cccd52bfbb594713462c7c85f4b91453/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-installations:18.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/cccd52bfbb594713462c7c85f4b91453/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+110                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+110-->[com.google.firebase:firebase-installations:18.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/cccd52bfbb594713462c7c85f4b91453/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-installations:18.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/cccd52bfbb594713462c7c85f4b91453/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/d75bc57036ce0fe77f075806bd7b4cac/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+113                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+113-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/d75bc57036ce0fe77f075806bd7b4cac/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/d75bc57036ce0fe77f075806bd7b4cac/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+116                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+116-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+118        </service>
+119
+120        <activity
+120-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:29:9-46:20
+121            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+121-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:30:13-80
+122            android:excludeFromRecents="true"
+122-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:31:13-46
+123            android:exported="true"
+123-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:32:13-36
+124            android:launchMode="singleTask"
+124-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:33:13-44
+125            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+125-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:34:13-72
+126            <intent-filter>
+126-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:35:13-45:29
+127                <action android:name="android.intent.action.VIEW" />
+127-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:36:17-69
+127-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:36:25-66
+128
+129                <category android:name="android.intent.category.DEFAULT" />
+129-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:38:17-76
+129-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:38:27-73
+130                <category android:name="android.intent.category.BROWSABLE" />
+130-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:39:17-78
+130-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:39:27-75
+131
+132                <data
+132-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:42:13-50
+133                    android:host="firebase.auth"
+134                    android:path="/"
+135                    android:scheme="genericidp" />
+136            </intent-filter>
+137        </activity>
+138        <activity
+138-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:47:9-64:20
+139            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+139-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:48:13-79
+140            android:excludeFromRecents="true"
+140-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:49:13-46
+141            android:exported="true"
+141-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:50:13-36
+142            android:launchMode="singleTask"
+142-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:51:13-44
+143            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+143-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:52:13-72
+144            <intent-filter>
+144-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:53:13-63:29
+145                <action android:name="android.intent.action.VIEW" />
+145-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:36:17-69
+145-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:36:25-66
+146
+147                <category android:name="android.intent.category.DEFAULT" />
+147-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:38:17-76
+147-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:38:27-73
+148                <category android:name="android.intent.category.BROWSABLE" />
+148-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:39:17-78
+148-->[com.google.firebase:firebase-auth:23.2.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/1a6f33304791d518c5a968a0b319532e/transformed/jetified-firebase-auth-23.2.1/AndroidManifest.xml:39:27-75
+149
+150                <data
+150-->/home/huesitoes/Documentos/GitHub/eventpass-app/android/app/src/main/AndroidManifest.xml:42:13-50
+151                    android:host="firebase.auth"
+152                    android:path="/"
+153                    android:scheme="recaptcha" />
+154            </intent-filter>
+155        </activity>
+156
+157        <provider
+157-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+158            android:name="com.google.firebase.provider.FirebaseInitProvider"
+158-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+159            android:authorities="com.example.tickets_app.firebaseinitprovider"
+159-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+160            android:directBootAware="true"
+160-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+161            android:exported="false"
+161-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+162            android:initOrder="100" />
+162-->[com.google.firebase:firebase-common:21.0.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a35b7974792c2c169b5b91503f8636b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+163
+164        <receiver
+164-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:29:9-33:20
+165            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+165-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:30:13-85
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:31:13-35
+167            android:exported="false" >
+167-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:32:13-37
+168        </receiver>
+169
+170        <service
+170-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:35:9-38:40
+171            android:name="com.google.android.gms.measurement.AppMeasurementService"
+171-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:36:13-84
+172            android:enabled="true"
+172-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:37:13-35
+173            android:exported="false" />
+173-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:38:13-37
+174        <service
+174-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:39:9-43:72
+175            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+175-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:40:13-87
+176            android:enabled="true"
+176-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:41:13-35
+177            android:exported="false"
+177-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:42:13-37
+178            android:permission="android.permission.BIND_JOB_SERVICE" />
+178-->[com.google.android.gms:play-services-measurement:22.4.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b2ad5f0d0f0866bb055f63bb1e809879/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:43:13-69
+179        <service
+179-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+180            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+180-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+181            android:enabled="true"
+181-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+182            android:exported="false" >
+182-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+183            <meta-data
+183-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+184                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+184-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+185                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+185-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+186        </service>
+187
+188        <activity
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+189            android:name="androidx.credentials.playservices.HiddenActivity"
+189-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+190            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+191            android:enabled="true"
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+192            android:exported="false"
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+193            android:fitsSystemWindows="true"
+193-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+194            android:theme="@style/Theme.Hidden" >
+194-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/huesitoes/.gradle/caches/8.10.2/transforms/4a5161467b90d194325e88744a6f9e52/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+195        </activity>
+196        <activity
+196-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+197            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+197-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+198            android:excludeFromRecents="true"
+198-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+199            android:exported="false"
+199-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+200-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+201        <!--
+202            Service handling Google Sign-In user revocation. For apps that do not integrate with
+203            Google Sign-In, this service will never be started.
+204        -->
+205        <service
+205-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+206            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+206-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+207            android:exported="true"
+207-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+208            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+208-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+209            android:visibleToInstantApps="true" />
+209-->[com.google.android.gms:play-services-auth:20.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/0f28ed7f93e0f43324e62e94808593f0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+210
+211        <activity
+211-->[com.google.android.gms:play-services-base:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b8307e1695f6ecd94453b09779e3a328/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+212            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+212-->[com.google.android.gms:play-services-base:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b8307e1695f6ecd94453b09779e3a328/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+213            android:exported="false"
+213-->[com.google.android.gms:play-services-base:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b8307e1695f6ecd94453b09779e3a328/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+214            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+214-->[com.google.android.gms:play-services-base:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/b8307e1695f6ecd94453b09779e3a328/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+215
+216        <uses-library
+216-->[androidx.window:window:1.2.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/f8fbf7c9e9dc868b05abf802fb24a2bb/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+217            android:name="androidx.window.extensions"
+217-->[androidx.window:window:1.2.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/f8fbf7c9e9dc868b05abf802fb24a2bb/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+218            android:required="false" />
+218-->[androidx.window:window:1.2.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/f8fbf7c9e9dc868b05abf802fb24a2bb/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+219        <uses-library
+219-->[androidx.window:window:1.2.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/f8fbf7c9e9dc868b05abf802fb24a2bb/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+220            android:name="androidx.window.sidecar"
+220-->[androidx.window:window:1.2.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/f8fbf7c9e9dc868b05abf802fb24a2bb/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+221            android:required="false" />
+221-->[androidx.window:window:1.2.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/f8fbf7c9e9dc868b05abf802fb24a2bb/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+222        <uses-library
+222-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /home/huesitoes/.gradle/caches/8.10.2/transforms/656257095f5f906fa6ee75288ef31e46/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:23:9-25:40
+223            android:name="android.ext.adservices"
+223-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /home/huesitoes/.gradle/caches/8.10.2/transforms/656257095f5f906fa6ee75288ef31e46/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:24:13-50
+224            android:required="false" />
+224-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /home/huesitoes/.gradle/caches/8.10.2/transforms/656257095f5f906fa6ee75288ef31e46/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:25:13-37
+225
+226        <meta-data
+226-->[com.google.android.gms:play-services-basement:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/337fbeaa05b26d71410a853df12178ac/transformed/jetified-play-services-basement-18.5.0/AndroidManifest.xml:21:9-23:69
+227            android:name="com.google.android.gms.version"
+227-->[com.google.android.gms:play-services-basement:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/337fbeaa05b26d71410a853df12178ac/transformed/jetified-play-services-basement-18.5.0/AndroidManifest.xml:22:13-58
+228            android:value="@integer/google_play_services_version" />
+228-->[com.google.android.gms:play-services-basement:18.5.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/337fbeaa05b26d71410a853df12178ac/transformed/jetified-play-services-basement-18.5.0/AndroidManifest.xml:23:13-66
+229
+230        <provider
+230-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+231            android:name="androidx.startup.InitializationProvider"
+231-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+232            android:authorities="com.example.tickets_app.androidx-startup"
+232-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+233            android:exported="false" >
+233-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+234            <meta-data
+234-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+235                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+235-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+236                android:value="androidx.startup" />
+236-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/huesitoes/.gradle/caches/8.10.2/transforms/6179c6d691c4d816d458eb30248f5758/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+237            <meta-data
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+238                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+239                android:value="androidx.startup" />
+239-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+240        </provider>
+241
+242        <receiver
+242-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+243            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+244            android:directBootAware="false"
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+245            android:enabled="true"
+245-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+246            android:exported="true"
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+247            android:permission="android.permission.DUMP" >
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+248            <intent-filter>
+248-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+249                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+250            </intent-filter>
+251            <intent-filter>
+251-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+252                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+253            </intent-filter>
+254            <intent-filter>
+254-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+255                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+255-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+255-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+256            </intent-filter>
+257            <intent-filter>
+257-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+258                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+258-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+258-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/huesitoes/.gradle/caches/8.10.2/transforms/0dcb5356132be2f2cd9a5a9d7db34738/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+259            </intent-filter>
+260        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+261        <activity
+261-->[com.google.android.play:core-common:2.0.3] /home/huesitoes/.gradle/caches/8.10.2/transforms/385b5677c3c8bc7355f1409da92a4587/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+262            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+262-->[com.google.android.play:core-common:2.0.3] /home/huesitoes/.gradle/caches/8.10.2/transforms/385b5677c3c8bc7355f1409da92a4587/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:15:13-93
+263            android:exported="false"
+263-->[com.google.android.play:core-common:2.0.3] /home/huesitoes/.gradle/caches/8.10.2/transforms/385b5677c3c8bc7355f1409da92a4587/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:16:13-37
+264            android:stateNotNeeded="true"
+264-->[com.google.android.play:core-common:2.0.3] /home/huesitoes/.gradle/caches/8.10.2/transforms/385b5677c3c8bc7355f1409da92a4587/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:17:13-42
+265            android:theme="@style/Theme.PlayCore.Transparent" />
+265-->[com.google.android.play:core-common:2.0.3] /home/huesitoes/.gradle/caches/8.10.2/transforms/385b5677c3c8bc7355f1409da92a4587/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:18:13-62
+266    </application>
+267
+268</manifest>

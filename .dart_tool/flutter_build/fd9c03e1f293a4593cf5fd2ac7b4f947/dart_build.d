@@ -1,0 +1,1 @@
+ /home/huesitoes/Documentos/GitHub/eventpass-app/.dart_tool/flutter_build/fd9c03e1f293a4593cf5fd2ac7b4f947/dart_build_result.json: 

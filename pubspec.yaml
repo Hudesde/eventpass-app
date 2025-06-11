@@ -45,6 +45,11 @@ flutter:
   uses-material-design: true
   assets:
     - assets/sample_events.json
+    - lib/assets/rock.mp4
+    - lib/assets/festival.mp4
+    - lib/assets/teatro.mp4
+    - lib/assets/natacion.mp4
+    - lib/assets/cena.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
